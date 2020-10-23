@@ -331,7 +331,7 @@
 		"D26AB574-5BEE-497F-B2F6-1772F3279FF7": [
 			{
 				"name": "rotate camera",
-				"source": "var gammaRotation=0;\nvar betaRotation=0;\n var mouse = new THREE.Vector2(1, 1);\n\nfunction mousemove(event){\n    \tmouse.x = ( event.clientX / player.width ) * 2 - 1;\n    \tmouse.y = - ( event.clientY / player.height ) * 2 + 1;\n    }\n\nfunction update( event ) {\n\t\t\n\t\tthis.rotation.z=-gammaRotation/20;\n\t    //this.rotation.y=betaRotation/20;\n\t\n        \n\n}\n\nwindow.addEventListener('deviceorientation',function(e){\ngammaRotation=e.gamma;\nbetaRotation=e.beta;\n});"
+				"source": "var gammaRotation=0;\nvar betaRotation=0;\n var mouse = new THREE.Vector2(1, 1);\n\nfunction mousemove(event){\n    \tmouse.x = ( event.clientX / player.width ) * 2 - 1;\n    \tmouse.y = - ( event.clientY / player.height ) * 2 + 1;\n    }\n\nfunction update( event ) {\n\t\t\n\t\tthis.rotation.x=-gammaRotation/20;\n\t    //this.rotation.y=betaRotation/20;\n\t\n        \n\n}\n\nwindow.addEventListener('deviceorientation',function(e){\ngammaRotation=e.gamma;\nbetaRotation=e.beta;\n});"
 			}]
 	}
 }
